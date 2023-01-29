@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AllergyPrediction</string>
+    <string name="productAllergyList">Аллергия на:</string>
+    <string name="productNoAllergyList">Нет аллергии:</string>
+    <string name="allergyList">Список аллергенов:</string>
+    <string name="allergyPredict">Предсказать аллергию на новый продукт:</string>
+    <string name="addProductAllergy">+ Добавить продукт</string>
+    <string name="addProductNoAllergy">+ Добавить продукт</string>
+    <string name="calculateAllergy">= Узнать мои аллергены</string>
+    <string name="addNewProduct">+ Добавить новый продукт</string>
+    <string name="addProductHeader">Добавить продукт</string>
+    <string name="productName">Название продукта:</string>
+    <string name="enterProductName">Nivea Creme 250ml</string>
+    <string name="productBarcode">Штрих-код продукта:</string>
+    <string name="enterProductBarcode">4000000111111</string>
+    <string name="productIngredients">Состав продукта:</string>
+    <string name="enterProductIngredient">+ Добавить ингредиент</string>
+    <string name="plus">+</string>
+
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="add">Добавить</string>
+    <string name="productCardHeader">Карточка продукта</string>
+
+    <string name="predictionResultYes">Да</string>
+    <string name="predictionResultNo">Нет</string>
+    <string name="predictionResultProbablyYes">Скорее да</string>
+    <string name="predictionResultYesProbablyNot">Скорее нет</string>
+
+    <string name="ingredientAlreadyAdded">Этот ингредиент уже добавлен</string>
+    <string name="fillInputs">Заполните обязательные поля</string>
+    <string name="fillIngredients">Добавьте ингредиенты</string>
+    <string name="alreadyInLists">Этот продукт уже есть в ваших списках</string>
+    <string name="fillProductLists">Добавьте хотя бы по одному товару в списки продуктов с аллегрией и без (но лучше больше одного)</string>
+    <string name="_20">20%</string>
+    <string name="ingredient_name">Ingredient name</string>
+
+    <string name="predict_allergy">Click to Predict Allergy</string>
+
+</resources>

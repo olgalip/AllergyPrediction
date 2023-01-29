@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:padding="5dp"
+      android:text="@string/addProductHeader"
+      android:textAlignment="center"
+      android:textColor="@android:color/white"
+      android:textSize="22sp"
+      android:gravity="center_horizontal" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/productBarcode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/productBarcode_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="@string/enterProductBarcode"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/productName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productName_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="@string/enterProductName"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ingredientsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="10dp"
+          android:text="@string/productIngredients"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/productIngredient_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/enterProductIngredient"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/plus"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/productIngredientsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+          <Button
+              android:id="@+id/btn_add"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:backgroundTint="@color/colorPrimary"
+              android:text="@string/add"
+              android:textColor="@android:color/white"
+              android:textSize="18sp" />
+
+          <Button
+              android:id="@+id/btn_cancel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:backgroundTint="@color/colorPrimary"
+              android:text="@string/cancel"
+              android:textColor="@android:color/white"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+      </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+
+  </LinearLayout>
+
+</LinearLayout>
